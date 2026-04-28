@@ -366,6 +366,7 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
     <script>
         document.getElementById('participantSearch').addEventListener('keyup', function() {
             let filter = this.value.toUpperCase();
@@ -386,14 +387,6 @@
 
             document.getElementById('noResults').style.display = found ? "none" : "block";
             document.getElementById('participantTable').style.display = found ? "table" : "none";
-        });
-
-        // Mobile Nav
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        hamburger.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-            hamburger.classList.toggle("toggle");
         });
     </script>
 </body>

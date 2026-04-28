@@ -7,17 +7,25 @@
     <meta name="description" content="Informasi lengkap, jadwal, dan tata cara pelaksanaan Asesmen Akhir Sekolah Berbasis Digital (AABD) Tahun 2026.">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 <body>
     <div class="background-overlay"></div>
     
     <nav class="glass-nav">
         <div class="nav-container">
-            <h1 class="logo">AABD <span>2026</span></h1>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo SMPN 3 Kendari">
+                <div class="logo-text">
+                    <div class="main-logo">AABD <span>2026</span></div>
+                    <div class="school-name">SMP Negeri 3 Kendari</div>
+                </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="simulasi.html">Simulasi AABD</a></li>
                 <li><a href="pelaksanaan.html">Pelaksanaan AABD</a></li>
+                <li><a href="peserta.html">Daftar Peserta</a></li>
                 <li><a href="index.html#jadwal">Jadwal</a></li>
             </ul>
             <div class="hamburger">
@@ -74,44 +82,81 @@
             <div class="container section-inner glass-card slide-in-right">
                 <div class="section-header">
                     <h2>Jadwal Kegiatan</h2>
-                    <p>Timeline Pelaksanaan AABD 2026</p>
+                    <p>Jadwal Mata Pelajaran Utama AABD 2026</p>
                 </div>
                 
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">10 Mei 2026</div>
-                        <div class="timeline-content">
-                            <h3>Simulasi AABD Tahap 1</h3>
-                            <p>Uji coba sistem dan pengecekan kesiapan perangkat siswa. Wajib diikuti oleh seluruh peserta didik.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">15 Mei 2026</div>
-                        <div class="timeline-content">
-                            <h3>Simulasi AABD Tahap 2 & Gladi Bersih</h3>
-                            <p>Pemantapan penggunaan aplikasi CBT dan finalisasi data peserta ujian.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item highlight">
-                        <div class="timeline-date">20 - 25 Mei 2026</div>
-                        <div class="timeline-content">
-                            <h3>Pelaksanaan AABD Utama</h3>
-                            <p>Ujian dilaksanakan selama 6 hari dengan pembagian 2 sesi setiap harinya.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">28 - 29 Mei 2026</div>
-                        <div class="timeline-content">
-                            <h3>AABD Susulan</h3>
-                            <p>Diperuntukkan bagi siswa yang berhalangan hadir pada jadwal utama dengan alasan yang sah.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">5 Juni 2026</div>
-                        <div class="timeline-content">
-                            <h3>Pengumuman Hasil</h3>
-                            <p>Pengumuman nilai akhir dapat diakses melalui portal sekolah masing-masing siswa.</p>
-                        </div>
+                <div class="table-container">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Hari & Tanggal</th>
+                                <th>Waktu</th>
+                                <th>Mata Pelajaran</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Senin, 4 Mei 2026 -->
+                            <tr>
+                                <td rowspan="2">Senin, 4 Mei 2026</td>
+                                <td>07.30 - 09.30</td>
+                                <td>Pendidikan Agama dan Budi Pekerti</td>
+                            </tr>
+                            <tr>
+                                <td>10.00 - 12.00</td>
+                                <td>Bahasa Indonesia</td>
+                            </tr>
+                            <!-- Selasa, 5 Mei 2026 -->
+                            <tr>
+                                <td rowspan="2">Selasa, 5 Mei 2026</td>
+                                <td>07.30 - 09.30</td>
+                                <td>Matematika</td>
+                            </tr>
+                            <tr>
+                                <td>10.00 - 12.00</td>
+                                <td>Pendidikan Pancasila</td>
+                            </tr>
+                            <!-- Rabu, 6 Mei 2026 -->
+                            <tr>
+                                <td rowspan="2">Rabu, 06 Mei 2026</td>
+                                <td>07.20 - 08.50</td>
+                                <td>IPA</td>
+                            </tr>
+                            <tr>
+                                <td>09.10 - 10.40</td>
+                                <td>PJOK</td>
+                            </tr>
+                            <!-- Kamis, 7 Mei 2026 -->
+                            <tr>
+                                <td rowspan="3">Kamis, 07 Mei 2026</td>
+                                <td>07.30 - 09.30</td>
+                                <td>IPS</td>
+                            </tr>
+                            <tr>
+                                <td>09.30 - 10.30</td>
+                                <td>Seni Budaya / Prakarya</td>
+                            </tr>
+                            <tr>
+                                <td>10.45 - 12.00</td>
+                                <td>Mulok BDT</td>
+                            </tr>
+                            <!-- Jum'at, 8 Mei 2026 -->
+                            <tr>
+                                <td rowspan="2">Jum'at, 08 Mei 2026</td>
+                                <td>07.30 - 09.00</td>
+                                <td>Bahasa Inggris</td>
+                            </tr>
+                            <tr>
+                                <td>09.30 - 11.00</td>
+                                <td>Informatika</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-alert" style="margin-top: 2rem;">
+                    <span class="alert-icon">📅</span>
+                    <div class="alert-text">
+                        <strong>Informasi Sesi:</strong> Pembagian ruang dan sesi dapat dilihat pada kartu peserta masing-masing. Pastikan Anda mencetak kartu peserta sebelum ujian dimulai.
                     </div>
                 </div>
             </div>
@@ -164,8 +209,11 @@
 
     <footer class="glass-footer">
         <div class="footer-content">
-            <div class="footer-logo">AABD <span>2026</span></div>
-            <p>&copy; 2026 Panitia Pelaksana Asesmen Akhir Sekolah Berbasis Digital. All rights reserved.</p>
+            <div class="footer-logo">
+                <div class="main-logo">AABD <span>2026</span></div>
+                <div class="school-name" style="font-size: 0.7rem; color: var(--text-muted);">SMP Negeri 3 Kendari</div>
+            </div>
+            <p>&copy; 2026 Panitia Pelaksana AABD - SMP Negeri 3 Kendari. All rights reserved.</p>
         </div>
     </footer>
 

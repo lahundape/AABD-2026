@@ -99,13 +99,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--text-main);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    filter: drop-shadow(0 0 8px rgba(129, 140, 248, 0.3));
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.main-logo {
+    font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: 1px;
 }
 
-.logo span {
+.main-logo span {
     color: var(--primary-light);
+}
+
+.school-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
 }
 
 .nav-links {
@@ -567,6 +599,96 @@ h1, h2, h3, h4, h5, h6 {
     
     .step-card {
         flex-direction: column;
-        gap: 0.5rem;
     }
+}
+
+/* Table Styles */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1rem;
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    min-width: 500px;
+}
+
+.schedule-table th, 
+.schedule-table td {
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.schedule-table th {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.schedule-table td:first-child {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Search Bar */
+.search-container {
+    margin-bottom: 2rem;
+    position: relative;
+    max-width: 500px;
+}
+
+.search-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    padding-left: 3.5rem;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-light);
+    box-shadow: 0 0 15px rgba(129, 140, 248, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.no-results {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-muted);
+    display: none;
 }
